@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB41871D92100919946 /* QLocationVC.m */; };
+		1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB51871D92100919946 /* QLocationVC.xib */; };
+		1C63F59018A5B70000913985 /* QMemoryManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63F58E18A5B70000913985 /* QMemoryManagementVC.m */; };
+		1C63F59118A5B70000913985 /* QMemoryManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C63F58F18A5B70000913985 /* QMemoryManagementVC.xib */; };
+		1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */; };
+		1C63F59618A9E94E00913985 /* QFilesAndNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C63F59418A9E94E00913985 /* QFilesAndNetworkingVC.xib */; };
+		1C7BAD9819096F0B00595B3F /* ReviewList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C7BAD9719096F0B00595B3F /* ReviewList.txt */; };
+		1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A1B1B18E0E729006821BB /* QPanelViewController.m */; };
+		1C9A1B1E18E0E729006821BB /* QPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A1B1C18E0E729006821BB /* QPanelViewController.xib */; };
+		1C9A1B2118E12B6C006821BB /* QCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A1B2018E12B6C006821BB /* QCustomPanel.m */; };
+		1CA70AB7189EDBDA00BB1EF3 /* QCameraManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA70AB5189EDBDA00BB1EF3 /* QCameraManagerVC.m */; };
+		1CA70AB8189EDBDA00BB1EF3 /* QCameraManagerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA70AB6189EDBDA00BB1EF3 /* QCameraManagerVC.xib */; };
+		1CB5BA0F186BDC7A00764C98 /* QTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5BA0D186BDC7A00764C98 /* QTableVC.m */; };
+		1CB5BA10186BDC7A00764C98 /* QTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5BA0E186BDC7A00764C98 /* QTableVC.xib */; };
+		1CB5BA14186BF23700764C98 /* QGravityCollisionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5BA12186BF23700764C98 /* QGravityCollisionVC.m */; };
+		1CB5BA15186BF23700764C98 /* QGravityCollisionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB5BA13186BF23700764C98 /* QGravityCollisionVC.xib */; };
+		1CB6B3511869A3FF0084B694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3501869A3FF0084B694 /* Foundation.framework */; };
+		1CB6B3531869A3FF0084B694 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3521869A3FF0084B694 /* CoreGraphics.framework */; };
+		1CB6B3551869A3FF0084B694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3541869A3FF0084B694 /* UIKit.framework */; };
+		1CB6B3571869A3FF0084B694 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3561869A3FF0084B694 /* CoreData.framework */; };
+		1CB6B35D1869A3FF0084B694 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6B35B1869A3FF0084B694 /* InfoPlist.strings */; };
+		1CB6B35F1869A3FF0084B694 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6B35E1869A3FF0084B694 /* main.m */; };
+		1CB6B3631869A3FF0084B694 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6B3621869A3FF0084B694 /* QAppDelegate.m */; };
+		1CB6B3661869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6B3641869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld */; };
+		1CB6B3681869A3FF0084B694 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6B3671869A3FF0084B694 /* Images.xcassets */; };
+		1CB6B36F1869A3FF0084B694 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B36E1869A3FF0084B694 /* XCTest.framework */; };
+		1CB6B3701869A3FF0084B694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3501869A3FF0084B694 /* Foundation.framework */; };
+		1CB6B3711869A3FF0084B694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3541869A3FF0084B694 /* UIKit.framework */; };
+		1CB6B3721869A3FF0084B694 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB6B3561869A3FF0084B694 /* CoreData.framework */; };
+		1CB6B37A1869A3FF0084B694 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6B3781869A3FF0084B694 /* InfoPlist.strings */; };
+		1CB6B37C1869A3FF0084B694 /* WorkshopiOS7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6B37B1869A3FF0084B694 /* WorkshopiOS7Tests.m */; };
+		1CB6B38A1869A4DF0084B694 /* QRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB6B3891869A4DF0084B694 /* QRootViewController.m */; };
+		1CB6B38C1869A4F80084B694 /* QRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6B38B1869A4F80084B694 /* QRootViewController.xib */; };
+		1CC5387D186AADE50061F11B /* QGesturesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5387B186AADE50061F11B /* QGesturesVC.m */; };
+		1CC5387E186AADE50061F11B /* QGesturesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC5387C186AADE50061F11B /* QGesturesVC.xib */; };
+		1CC53882186B44220061F11B /* QMultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53880186B44220061F11B /* QMultiThreadVC.m */; };
+		1CC53883186B44220061F11B /* QMultiThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53881186B44220061F11B /* QMultiThreadVC.xib */; };
+		1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53885186B45D10061F11B /* QWebViewVC.m */; };
+		1CC53888186B45D10061F11B /* QWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53886186B45D10061F11B /* QWebViewVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CB6B3731869A3FF0084B694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CB6B3451869A3FF0084B694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CB6B34C1869A3FF0084B694;
+			remoteInfo = WorkshopiOS7;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C3CCAB31871D92100919946 /* QLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLocationVC.h; sourceTree = "<group>"; };
+		1C3CCAB41871D92100919946 /* QLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLocationVC.m; sourceTree = "<group>"; };
+		1C3CCAB51871D92100919946 /* QLocationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLocationVC.xib; sourceTree = "<group>"; };
+		1C63F58D18A5B70000913985 /* QMemoryManagementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMemoryManagementVC.h; sourceTree = "<group>"; };
+		1C63F58E18A5B70000913985 /* QMemoryManagementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMemoryManagementVC.m; sourceTree = "<group>"; };
+		1C63F58F18A5B70000913985 /* QMemoryManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMemoryManagementVC.xib; sourceTree = "<group>"; };
+		1C63F59218A9E94E00913985 /* QFilesAndNetworkingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFilesAndNetworkingVC.h; sourceTree = "<group>"; };
+		1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilesAndNetworkingVC.m; sourceTree = "<group>"; };
+		1C63F59418A9E94E00913985 /* QFilesAndNetworkingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFilesAndNetworkingVC.xib; sourceTree = "<group>"; };
+		1C7BAD9719096F0B00595B3F /* ReviewList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReviewList.txt; sourceTree = "<group>"; };
+		1C9A1B1A18E0E729006821BB /* QPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPanelViewController.h; sourceTree = "<group>"; };
+		1C9A1B1B18E0E729006821BB /* QPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPanelViewController.m; sourceTree = "<group>"; };
+		1C9A1B1C18E0E729006821BB /* QPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QPanelViewController.xib; sourceTree = "<group>"; };
+		1C9A1B1F18E12B6C006821BB /* QCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCustomPanel.h; sourceTree = "<group>"; };
+		1C9A1B2018E12B6C006821BB /* QCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCustomPanel.m; sourceTree = "<group>"; };
+		1CA70AB4189EDBDA00BB1EF3 /* QCameraManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCameraManagerVC.h; sourceTree = "<group>"; };
+		1CA70AB5189EDBDA00BB1EF3 /* QCameraManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCameraManagerVC.m; sourceTree = "<group>"; };
+		1CA70AB6189EDBDA00BB1EF3 /* QCameraManagerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCameraManagerVC.xib; sourceTree = "<group>"; };
+		1CB5BA0C186BDC7A00764C98 /* QTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTableVC.h; sourceTree = "<group>"; };
+		1CB5BA0D186BDC7A00764C98 /* QTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTableVC.m; sourceTree = "<group>"; };
+		1CB5BA0E186BDC7A00764C98 /* QTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTableVC.xib; sourceTree = "<group>"; };
+		1CB5BA11186BF23700764C98 /* QGravityCollisionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGravityCollisionVC.h; sourceTree = "<group>"; };
+		1CB5BA12186BF23700764C98 /* QGravityCollisionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGravityCollisionVC.m; sourceTree = "<group>"; };
+		1CB5BA13186BF23700764C98 /* QGravityCollisionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGravityCollisionVC.xib; sourceTree = "<group>"; };
+		1CB6B34D1869A3FF0084B694 /* WorkshopiOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkshopiOS7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB6B3501869A3FF0084B694 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CB6B3521869A3FF0084B694 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1CB6B3541869A3FF0084B694 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1CB6B3561869A3FF0084B694 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1CB6B35A1869A3FF0084B694 /* WorkshopiOS7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkshopiOS7-Info.plist"; sourceTree = "<group>"; };
+		1CB6B35C1869A3FF0084B694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CB6B35E1869A3FF0084B694 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CB6B3601869A3FF0084B694 /* WorkshopiOS7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorkshopiOS7-Prefix.pch"; sourceTree = "<group>"; };
+		1CB6B3611869A3FF0084B694 /* QAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
+		1CB6B3621869A3FF0084B694 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
+		1CB6B3651869A3FF0084B694 /* WorkshopiOS7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkshopiOS7.xcdatamodel; sourceTree = "<group>"; };
+		1CB6B3671869A3FF0084B694 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CB6B36D1869A3FF0084B694 /* WorkshopiOS7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkshopiOS7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB6B36E1869A3FF0084B694 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1CB6B3771869A3FF0084B694 /* WorkshopiOS7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkshopiOS7Tests-Info.plist"; sourceTree = "<group>"; };
+		1CB6B3791869A3FF0084B694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CB6B37B1869A3FF0084B694 /* WorkshopiOS7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkshopiOS7Tests.m; sourceTree = "<group>"; };
+		1CB6B3881869A4DF0084B694 /* QRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRootViewController.h; sourceTree = "<group>"; };
+		1CB6B3891869A4DF0084B694 /* QRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRootViewController.m; sourceTree = "<group>"; };
+		1CB6B38B1869A4F80084B694 /* QRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRootViewController.xib; sourceTree = "<group>"; };
+		1CC5387A186AADE50061F11B /* QGesturesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGesturesVC.h; sourceTree = "<group>"; };
+		1CC5387B186AADE50061F11B /* QGesturesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGesturesVC.m; sourceTree = "<group>"; };
+		1CC5387C186AADE50061F11B /* QGesturesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGesturesVC.xib; sourceTree = "<group>"; };
+		1CC5387F186B44220061F11B /* QMultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMultiThreadVC.h; sourceTree = "<group>"; };
+		1CC53880186B44220061F11B /* QMultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMultiThreadVC.m; sourceTree = "<group>"; };
+		1CC53881186B44220061F11B /* QMultiThreadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMultiThreadVC.xib; sourceTree = "<group>"; };
+		1CC53884186B45D10061F11B /* QWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWebViewVC.h; sourceTree = "<group>"; };
+		1CC53885186B45D10061F11B /* QWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWebViewVC.m; sourceTree = "<group>"; };
+		1CC53886186B45D10061F11B /* QWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QWebViewVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CB6B34A1869A3FF0084B694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB6B3531869A3FF0084B694 /* CoreGraphics.framework in Frameworks */,
+				1CB6B3571869A3FF0084B694 /* CoreData.framework in Frameworks */,
+				1CB6B3551869A3FF0084B694 /* UIKit.framework in Frameworks */,
+				1CB6B3511869A3FF0084B694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB6B36A1869A3FF0084B694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB6B36F1869A3FF0084B694 /* XCTest.framework in Frameworks */,
+				1CB6B3721869A3FF0084B694 /* CoreData.framework in Frameworks */,
+				1CB6B3711869A3FF0084B694 /* UIKit.framework in Frameworks */,
+				1CB6B3701869A3FF0084B694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB6B3441869A3FF0084B694 = {
+			isa = PBXGroup;
+			children = (
+				1C7BAD9719096F0B00595B3F /* ReviewList.txt */,
+				1CB6B3581869A3FF0084B694 /* WorkshopiOS7 */,
+				1CB6B3751869A3FF0084B694 /* WorkshopiOS7Tests */,
+				1CB6B34F1869A3FF0084B694 /* Frameworks */,
+				1CB6B34E1869A3FF0084B694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CB6B34E1869A3FF0084B694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B34D1869A3FF0084B694 /* WorkshopiOS7.app */,
+				1CB6B36D1869A3FF0084B694 /* WorkshopiOS7Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CB6B34F1869A3FF0084B694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B3501869A3FF0084B694 /* Foundation.framework */,
+				1CB6B3521869A3FF0084B694 /* CoreGraphics.framework */,
+				1CB6B3541869A3FF0084B694 /* UIKit.framework */,
+				1CB6B3561869A3FF0084B694 /* CoreData.framework */,
+				1CB6B36E1869A3FF0084B694 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CB6B3581869A3FF0084B694 /* WorkshopiOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B3611869A3FF0084B694 /* QAppDelegate.h */,
+				1CB6B3621869A3FF0084B694 /* QAppDelegate.m */,
+				1CB6B3671869A3FF0084B694 /* Images.xcassets */,
+				1CB6B3641869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld */,
+				1CB6B3881869A4DF0084B694 /* QRootViewController.h */,
+				1CB6B3891869A4DF0084B694 /* QRootViewController.m */,
+				1CB6B38B1869A4F80084B694 /* QRootViewController.xib */,
+				1CC5387A186AADE50061F11B /* QGesturesVC.h */,
+				1CC5387B186AADE50061F11B /* QGesturesVC.m */,
+				1CC5387C186AADE50061F11B /* QGesturesVC.xib */,
+				1CC5387F186B44220061F11B /* QMultiThreadVC.h */,
+				1CC53880186B44220061F11B /* QMultiThreadVC.m */,
+				1CC53881186B44220061F11B /* QMultiThreadVC.xib */,
+				1CC53884186B45D10061F11B /* QWebViewVC.h */,
+				1CC53885186B45D10061F11B /* QWebViewVC.m */,
+				1CC53886186B45D10061F11B /* QWebViewVC.xib */,
+				1CB5BA0C186BDC7A00764C98 /* QTableVC.h */,
+				1CB5BA0D186BDC7A00764C98 /* QTableVC.m */,
+				1CB5BA0E186BDC7A00764C98 /* QTableVC.xib */,
+				1CB5BA11186BF23700764C98 /* QGravityCollisionVC.h */,
+				1CB5BA12186BF23700764C98 /* QGravityCollisionVC.m */,
+				1CB5BA13186BF23700764C98 /* QGravityCollisionVC.xib */,
+				1C3CCAB31871D92100919946 /* QLocationVC.h */,
+				1C3CCAB41871D92100919946 /* QLocationVC.m */,
+				1C3CCAB51871D92100919946 /* QLocationVC.xib */,
+				1CA70AB4189EDBDA00BB1EF3 /* QCameraManagerVC.h */,
+				1CA70AB5189EDBDA00BB1EF3 /* QCameraManagerVC.m */,
+				1CA70AB6189EDBDA00BB1EF3 /* QCameraManagerVC.xib */,
+				1C63F58D18A5B70000913985 /* QMemoryManagementVC.h */,
+				1C63F58E18A5B70000913985 /* QMemoryManagementVC.m */,
+				1C63F58F18A5B70000913985 /* QMemoryManagementVC.xib */,
+				1C63F59218A9E94E00913985 /* QFilesAndNetworkingVC.h */,
+				1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */,
+				1C63F59418A9E94E00913985 /* QFilesAndNetworkingVC.xib */,
+				1C9A1B1A18E0E729006821BB /* QPanelViewController.h */,
+				1C9A1B1B18E0E729006821BB /* QPanelViewController.m */,
+				1C9A1B1C18E0E729006821BB /* QPanelViewController.xib */,
+				1C9A1B1F18E12B6C006821BB /* QCustomPanel.h */,
+				1C9A1B2018E12B6C006821BB /* QCustomPanel.m */,
+				1CB6B3591869A3FF0084B694 /* Supporting Files */,
+			);
+			path = WorkshopiOS7;
+			sourceTree = "<group>";
+		};
+		1CB6B3591869A3FF0084B694 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B35A1869A3FF0084B694 /* WorkshopiOS7-Info.plist */,
+				1CB6B35B1869A3FF0084B694 /* InfoPlist.strings */,
+				1CB6B35E1869A3FF0084B694 /* main.m */,
+				1CB6B3601869A3FF0084B694 /* WorkshopiOS7-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CB6B3751869A3FF0084B694 /* WorkshopiOS7Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B37B1869A3FF0084B694 /* WorkshopiOS7Tests.m */,
+				1CB6B3761869A3FF0084B694 /* Supporting Files */,
+			);
+			path = WorkshopiOS7Tests;
+			sourceTree = "<group>";
+		};
+		1CB6B3761869A3FF0084B694 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CB6B3771869A3FF0084B694 /* WorkshopiOS7Tests-Info.plist */,
+				1CB6B3781869A3FF0084B694 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CB6B34C1869A3FF0084B694 /* WorkshopiOS7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB6B37F1869A3FF0084B694 /* Build configuration list for PBXNativeTarget "WorkshopiOS7" */;
+			buildPhases = (
+				1CB6B3491869A3FF0084B694 /* Sources */,
+				1CB6B34A1869A3FF0084B694 /* Frameworks */,
+				1CB6B34B1869A3FF0084B694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkshopiOS7;
+			productName = WorkshopiOS7;
+			productReference = 1CB6B34D1869A3FF0084B694 /* WorkshopiOS7.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CB6B36C1869A3FF0084B694 /* WorkshopiOS7Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB6B3821869A3FF0084B694 /* Build configuration list for PBXNativeTarget "WorkshopiOS7Tests" */;
+			buildPhases = (
+				1CB6B3691869A3FF0084B694 /* Sources */,
+				1CB6B36A1869A3FF0084B694 /* Frameworks */,
+				1CB6B36B1869A3FF0084B694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CB6B3741869A3FF0084B694 /* PBXTargetDependency */,
+			);
+			name = WorkshopiOS7Tests;
+			productName = WorkshopiOS7Tests;
+			productReference = 1CB6B36D1869A3FF0084B694 /* WorkshopiOS7Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CB6B3451869A3FF0084B694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Q;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Pedro Ontiveros";
+				TargetAttributes = {
+					1CB6B34C1869A3FF0084B694 = {
+						DevelopmentTeam = 44SRE3UW2N;
+					};
+					1CB6B36C1869A3FF0084B694 = {
+						TestTargetID = 1CB6B34C1869A3FF0084B694;
+					};
+				};
+			};
+			buildConfigurationList = 1CB6B3481869A3FF0084B694 /* Build configuration list for PBXProject "WorkshopiOS7" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CB6B3441869A3FF0084B694;
+			productRefGroup = 1CB6B34E1869A3FF0084B694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CB6B34C1869A3FF0084B694 /* WorkshopiOS7 */,
+				1CB6B36C1869A3FF0084B694 /* WorkshopiOS7Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CB6B34B1869A3FF0084B694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB5BA10186BDC7A00764C98 /* QTableVC.xib in Resources */,
+				1C7BAD9819096F0B00595B3F /* ReviewList.txt in Resources */,
+				1CA70AB8189EDBDA00BB1EF3 /* QCameraManagerVC.xib in Resources */,
+				1CB5BA15186BF23700764C98 /* QGravityCollisionVC.xib in Resources */,
+				1CC5387E186AADE50061F11B /* QGesturesVC.xib in Resources */,
+				1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */,
+				1C63F59618A9E94E00913985 /* QFilesAndNetworkingVC.xib in Resources */,
+				1C9A1B1E18E0E729006821BB /* QPanelViewController.xib in Resources */,
+				1CC53883186B44220061F11B /* QMultiThreadVC.xib in Resources */,
+				1CC53888186B45D10061F11B /* QWebViewVC.xib in Resources */,
+				1CB6B35D1869A3FF0084B694 /* InfoPlist.strings in Resources */,
+				1CB6B3681869A3FF0084B694 /* Images.xcassets in Resources */,
+				1C63F59118A5B70000913985 /* QMemoryManagementVC.xib in Resources */,
+				1CB6B38C1869A4F80084B694 /* QRootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB6B36B1869A3FF0084B694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB6B37A1869A3FF0084B694 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CB6B3491869A3FF0084B694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9A1B2118E12B6C006821BB /* QCustomPanel.m in Sources */,
+				1CB6B38A1869A4DF0084B694 /* QRootViewController.m in Sources */,
+				1CB5BA14186BF23700764C98 /* QGravityCollisionVC.m in Sources */,
+				1CA70AB7189EDBDA00BB1EF3 /* QCameraManagerVC.m in Sources */,
+				1CC5387D186AADE50061F11B /* QGesturesVC.m in Sources */,
+				1C63F59018A5B70000913985 /* QMemoryManagementVC.m in Sources */,
+				1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */,
+				1CC53882186B44220061F11B /* QMultiThreadVC.m in Sources */,
+				1CB6B3631869A3FF0084B694 /* QAppDelegate.m in Sources */,
+				1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */,
+				1CB6B35F1869A3FF0084B694 /* main.m in Sources */,
+				1CB6B3661869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld in Sources */,
+				1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */,
+				1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */,
+				1CB5BA0F186BDC7A00764C98 /* QTableVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB6B3691869A3FF0084B694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB6B37C1869A3FF0084B694 /* WorkshopiOS7Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CB6B3741869A3FF0084B694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CB6B34C1869A3FF0084B694 /* WorkshopiOS7 */;
+			targetProxy = 1CB6B3731869A3FF0084B694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CB6B35B1869A3FF0084B694 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB6B35C1869A3FF0084B694 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CB6B3781869A3FF0084B694 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CB6B3791869A3FF0084B694 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CB6B37D1869A3FF0084B694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CB6B37E1869A3FF0084B694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CB6B3801869A3FF0084B694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/SystemCoreLib/include/SystemCore,
+				);
+				INFOPLIST_FILE = "WorkshopiOS7/WorkshopiOS7-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pontiveros/Development/training/ios/WorkshopiOS7/workshopios7/WorkshopiOS7/SystemCoreLib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CB6B3811869A3FF0084B694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/SystemCoreLib/include/SystemCore,
+				);
+				INFOPLIST_FILE = "WorkshopiOS7/WorkshopiOS7-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pontiveros/Development/training/ios/WorkshopiOS7/workshopios7/WorkshopiOS7/SystemCoreLib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1CB6B3831869A3FF0084B694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkshopiOS7.app/WorkshopiOS7";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WorkshopiOS7Tests/WorkshopiOS7Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1CB6B3841869A3FF0084B694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorkshopiOS7.app/WorkshopiOS7";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
+				INFOPLIST_FILE = "WorkshopiOS7Tests/WorkshopiOS7Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB6B3481869A3FF0084B694 /* Build configuration list for PBXProject "WorkshopiOS7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB6B37D1869A3FF0084B694 /* Debug */,
+				1CB6B37E1869A3FF0084B694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB6B37F1869A3FF0084B694 /* Build configuration list for PBXNativeTarget "WorkshopiOS7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB6B3801869A3FF0084B694 /* Debug */,
+				1CB6B3811869A3FF0084B694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB6B3821869A3FF0084B694 /* Build configuration list for PBXNativeTarget "WorkshopiOS7Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB6B3831869A3FF0084B694 /* Debug */,
+				1CB6B3841869A3FF0084B694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CB6B3641869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CB6B3651869A3FF0084B694 /* WorkshopiOS7.xcdatamodel */,
+			);
+			currentVersion = 1CB6B3651869A3FF0084B694 /* WorkshopiOS7.xcdatamodel */;
+			path = WorkshopiOS7.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1CB6B3451869A3FF0084B694 /* Project object */;
+}

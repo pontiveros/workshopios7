@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0A502C19524B56007B469C /* ALCellStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A502919524B56007B469C /* ALCellStatusMonitor.m */; };
+		1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */; };
 		1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB41871D92100919946 /* QLocationVC.m */; };
 		1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB51871D92100919946 /* QLocationVC.xib */; };
+		1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C457B311951C4AF00771A3A /* QCustomViewMonitor.m */; };
 		1C63F59018A5B70000913985 /* QMemoryManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63F58E18A5B70000913985 /* QMemoryManagementVC.m */; };
 		1C63F59118A5B70000913985 /* QMemoryManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C63F58F18A5B70000913985 /* QMemoryManagementVC.xib */; };
 		1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */; };
@@ -59,9 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0A502819524B56007B469C /* ALCellStatusMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCellStatusMonitor.h; sourceTree = "<group>"; };
+		1C0A502919524B56007B469C /* ALCellStatusMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCellStatusMonitor.m; sourceTree = "<group>"; };
+		1C0A502A19524B56007B469C /* ALViewStatusMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALViewStatusMonitor.h; sourceTree = "<group>"; };
+		1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALViewStatusMonitor.m; sourceTree = "<group>"; };
 		1C3CCAB31871D92100919946 /* QLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLocationVC.h; sourceTree = "<group>"; };
 		1C3CCAB41871D92100919946 /* QLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLocationVC.m; sourceTree = "<group>"; };
 		1C3CCAB51871D92100919946 /* QLocationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLocationVC.xib; sourceTree = "<group>"; };
+		1C457B301951C4AF00771A3A /* QCustomViewMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCustomViewMonitor.h; sourceTree = "<group>"; };
+		1C457B311951C4AF00771A3A /* QCustomViewMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCustomViewMonitor.m; sourceTree = "<group>"; };
 		1C63F58D18A5B70000913985 /* QMemoryManagementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMemoryManagementVC.h; sourceTree = "<group>"; };
 		1C63F58E18A5B70000913985 /* QMemoryManagementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMemoryManagementVC.m; sourceTree = "<group>"; };
 		1C63F58F18A5B70000913985 /* QMemoryManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMemoryManagementVC.xib; sourceTree = "<group>"; };
@@ -176,6 +185,10 @@
 		1CB6B3581869A3FF0084B694 /* WorkshopiOS7 */ = {
 			isa = PBXGroup;
 			children = (
+				1C0A502819524B56007B469C /* ALCellStatusMonitor.h */,
+				1C0A502919524B56007B469C /* ALCellStatusMonitor.m */,
+				1C0A502A19524B56007B469C /* ALViewStatusMonitor.h */,
+				1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */,
 				1CB6B3611869A3FF0084B694 /* QAppDelegate.h */,
 				1CB6B3621869A3FF0084B694 /* QAppDelegate.m */,
 				1CB6B3671869A3FF0084B694 /* Images.xcassets */,
@@ -196,10 +209,10 @@
 				1CB5BA0D186BDC7A00764C98 /* QTableVC.m */,
 				1CB5BA0E186BDC7A00764C98 /* QTableVC.xib */,
 				1CB5BA11186BF23700764C98 /* QGravityCollisionVC.h */,
+				1C3CCAB41871D92100919946 /* QLocationVC.m */,
 				1CB5BA12186BF23700764C98 /* QGravityCollisionVC.m */,
 				1CB5BA13186BF23700764C98 /* QGravityCollisionVC.xib */,
 				1C3CCAB31871D92100919946 /* QLocationVC.h */,
-				1C3CCAB41871D92100919946 /* QLocationVC.m */,
 				1C3CCAB51871D92100919946 /* QLocationVC.xib */,
 				1CA70AB4189EDBDA00BB1EF3 /* QCameraManagerVC.h */,
 				1CA70AB5189EDBDA00BB1EF3 /* QCameraManagerVC.m */,
@@ -216,6 +229,8 @@
 				1C9A1B1F18E12B6C006821BB /* QCustomPanel.h */,
 				1C9A1B2018E12B6C006821BB /* QCustomPanel.m */,
 				1CB6B3591869A3FF0084B694 /* Supporting Files */,
+				1C457B301951C4AF00771A3A /* QCustomViewMonitor.h */,
+				1C457B311951C4AF00771A3A /* QCustomViewMonitor.m */,
 			);
 			path = WorkshopiOS7;
 			sourceTree = "<group>";
@@ -369,11 +384,14 @@
 				1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */,
 				1CC53882186B44220061F11B /* QMultiThreadVC.m in Sources */,
 				1CB6B3631869A3FF0084B694 /* QAppDelegate.m in Sources */,
+				1C0A502C19524B56007B469C /* ALCellStatusMonitor.m in Sources */,
 				1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */,
 				1CB6B35F1869A3FF0084B694 /* main.m in Sources */,
 				1CB6B3661869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld in Sources */,
 				1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */,
 				1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */,
+				1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */,
+				1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */,
 				1CB5BA0F186BDC7A00764C98 /* QTableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

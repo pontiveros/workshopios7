@@ -16,5 +16,7 @@
     
     BOOL _isChild1FullScreen;
     BOOL _isNormalColor;
+    
+    NSMutableDictionary *_monitors;
 }
 @end

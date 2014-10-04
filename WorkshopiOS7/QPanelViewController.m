@@ -7,7 +7,8 @@
 //
 
 #import "QPanelViewController.h"
-
+#import "QCustomViewMonitor.h"
+#import "ALCellStatusMonitor.h"
 
 static CGRect  littleView;
 static CGRect  bigView;
@@ -27,6 +28,8 @@ static CGPoint centerView;
         _isChild1FullScreen = NO;
         littleView = CGRectMake(0, 0, 150.0, 150.0);
         bigView    = [[UIScreen mainScreen] bounds];
+        
+        _monitors = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -66,7 +69,41 @@ static CGPoint centerView;
     _child2 = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)] autorelease];
     [_child2 setBackgroundColor:[UIColor colorWithRed:230/255.0 green:120/255.0 blue:23/255.0 alpha:1]];
     [_child2 setCenter:CGPointMake(250, 450)];
-    [self.view addSubview:_child2];
+    // [self.view addSubview:_child2];
+    
+    ALCellStatusMonitor *v3 = [[ALCellStatusMonitor alloc] init];
+    CGRect rcView = v3.frame;
+    rcView.origin.y = 360.0;
+    [v3 setFrame:rcView];
+    [v3 addItemWithIdentifier:@"monitor1" fullWidth:NO];
+    [v3 addItemWithIdentifier:@"monitor2" fullWidth:YES];
+    [v3 addItemWithIdentifier:@"monitor3" fullWidth:NO];
+    [v3 addItemWithIdentifier:@"monitor4" fullWidth:NO];
+    [self.view addSubview:v3];
+}
+
+- (void)createMonitors
+{
+    CGRect rcItem = CGRectMake(0, 0, 0, 0);
+    
+    CGFloat offSetY = 60;
+    float originY   = 360.0;
+    int rows = 3;
+    int tagNumber = 0;
+    
+    for (int y = 0; y < rows; y++) {
+        for (int x = 0; x < 2; x++) {
+            QCustomViewMonitor *item = [[QCustomViewMonitor alloc] init];
+            rcItem = item.frame;
+            rcItem.origin.y = originY + (offSetY * y);
+            rcItem.origin.x = (162.0 * x);
+            [item setFrame:rcItem];
+            [item setTag:tagNumber++];
+            [self.view addSubview:item];
+            NSString *key = [NSString stringWithFormat:@"item%d", tagNumber];
+            [_monitors setObject:item forKey:key];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

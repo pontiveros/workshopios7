@@ -69,8 +69,9 @@ static CGPoint centerView;
     _child2 = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)] autorelease];
     [_child2 setBackgroundColor:[UIColor colorWithRed:230/255.0 green:120/255.0 blue:23/255.0 alpha:1]];
     [_child2 setCenter:CGPointMake(250, 450)];
-    // [self.view addSubview:_child2];
+    [self.view addSubview:_child2];
     
+    /*
     ALCellStatusMonitor *v3 = [[ALCellStatusMonitor alloc] init];
     CGRect rcView = v3.frame;
     rcView.origin.y = 360.0;
@@ -80,6 +81,7 @@ static CGPoint centerView;
     [v3 addItemWithIdentifier:@"monitor3" fullWidth:NO];
     [v3 addItemWithIdentifier:@"monitor4" fullWidth:NO];
     [self.view addSubview:v3];
+    */
 }
 
 - (void)createMonitors

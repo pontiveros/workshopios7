@@ -10,9 +10,10 @@
 
 @interface QLocationVC : UIViewController
 
-@property (nonatomic, retain)IBOutlet UIView *canvas;
-@property (nonatomic, retain)IBOutlet UIView *box1;
-@property (nonatomic, retain)IBOutlet UIView *box2;
+@property (nonatomic, retain) IBOutlet UIView *canvas;
+@property (nonatomic, retain) IBOutlet UIView *box1;
+@property (nonatomic, retain) IBOutlet UIView *box2;
 
-- (IBAction)onTouchTapMe:(id)sender;
+- (IBAction)onTouchStartMonitor:(id)sender;
+
 @end

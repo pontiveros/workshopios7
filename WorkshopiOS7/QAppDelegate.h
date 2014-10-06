@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QRegionMonitor.h"
 
 @interface QAppDelegate : UIResponder <UIApplicationDelegate>
 

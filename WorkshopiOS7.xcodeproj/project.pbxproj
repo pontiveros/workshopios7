@@ -49,6 +49,8 @@
 		1CC53883186B44220061F11B /* QMultiThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53881186B44220061F11B /* QMultiThreadVC.xib */; };
 		1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53885186B45D10061F11B /* QWebViewVC.m */; };
 		1CC53888186B45D10061F11B /* QWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53886186B45D10061F11B /* QWebViewVC.xib */; };
+		1CD6546B19E1DDAD00B9719B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6546A19E1DDAD00B9719B /* CoreLocation.framework */; };
+		1CD6546E19E1F3A600B9719B /* QRegionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6546D19E1F3A600B9719B /* QRegionMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,9 @@
 		1CC53884186B45D10061F11B /* QWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWebViewVC.h; sourceTree = "<group>"; };
 		1CC53885186B45D10061F11B /* QWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWebViewVC.m; sourceTree = "<group>"; };
 		1CC53886186B45D10061F11B /* QWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QWebViewVC.xib; sourceTree = "<group>"; };
+		1CD6546A19E1DDAD00B9719B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1CD6546C19E1F3A600B9719B /* QRegionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRegionMonitor.h; sourceTree = "<group>"; };
+		1CD6546D19E1F3A600B9719B /* QRegionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRegionMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD6546B19E1DDAD00B9719B /* CoreLocation.framework in Frameworks */,
 				1CB6B3531869A3FF0084B694 /* CoreGraphics.framework in Frameworks */,
 				1CB6B3571869A3FF0084B694 /* CoreData.framework in Frameworks */,
 				1CB6B3551869A3FF0084B694 /* UIKit.framework in Frameworks */,
@@ -173,6 +179,7 @@
 		1CB6B34F1869A3FF0084B694 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CD6546A19E1DDAD00B9719B /* CoreLocation.framework */,
 				1CB6B3501869A3FF0084B694 /* Foundation.framework */,
 				1CB6B3521869A3FF0084B694 /* CoreGraphics.framework */,
 				1CB6B3541869A3FF0084B694 /* UIKit.framework */,
@@ -209,11 +216,13 @@
 				1CB5BA0D186BDC7A00764C98 /* QTableVC.m */,
 				1CB5BA0E186BDC7A00764C98 /* QTableVC.xib */,
 				1CB5BA11186BF23700764C98 /* QGravityCollisionVC.h */,
-				1C3CCAB41871D92100919946 /* QLocationVC.m */,
 				1CB5BA12186BF23700764C98 /* QGravityCollisionVC.m */,
 				1CB5BA13186BF23700764C98 /* QGravityCollisionVC.xib */,
 				1C3CCAB31871D92100919946 /* QLocationVC.h */,
+				1C3CCAB41871D92100919946 /* QLocationVC.m */,
 				1C3CCAB51871D92100919946 /* QLocationVC.xib */,
+				1CD6546C19E1F3A600B9719B /* QRegionMonitor.h */,
+				1CD6546D19E1F3A600B9719B /* QRegionMonitor.m */,
 				1CA70AB4189EDBDA00BB1EF3 /* QCameraManagerVC.h */,
 				1CA70AB5189EDBDA00BB1EF3 /* QCameraManagerVC.m */,
 				1CA70AB6189EDBDA00BB1EF3 /* QCameraManagerVC.xib */,
@@ -381,6 +390,7 @@
 				1CA70AB7189EDBDA00BB1EF3 /* QCameraManagerVC.m in Sources */,
 				1CC5387D186AADE50061F11B /* QGesturesVC.m in Sources */,
 				1C63F59018A5B70000913985 /* QMemoryManagementVC.m in Sources */,
+				1CD6546E19E1F3A600B9719B /* QRegionMonitor.m in Sources */,
 				1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */,
 				1CC53882186B44220061F11B /* QMultiThreadVC.m in Sources */,
 				1CB6B3631869A3FF0084B694 /* QAppDelegate.m in Sources */,
@@ -518,6 +528,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

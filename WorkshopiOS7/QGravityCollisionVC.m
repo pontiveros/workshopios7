@@ -41,15 +41,15 @@
     self.label1.tag = 5;
     
     self.title    = @"Gravity and collision effects";
-    self.animator = [[[UIDynamicAnimator alloc] initWithReferenceView:self.view] autorelease]; // Create an object UIDynamicAnimator
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view]; // Create an object UIDynamicAnimator
     
-    UIGravityBehavior *gravity = [[[UIGravityBehavior alloc] initWithItems:@[self.box1, self.box2]] autorelease];
+    UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[self.box1, self.box2]];
     gravity.magnitude = 0.5;
     
-    UICollisionBehavior *collision = [[[UICollisionBehavior alloc] initWithItems:@[ self.box2, self.box3, self.box4, self.label1]] autorelease];
+    UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[ self.box2, self.box3, self.box4, self.label1]];
     collision.translatesReferenceBoundsIntoBoundary = YES;
     
-    UIDynamicItemBehavior *itemBehavior = [[[UIDynamicItemBehavior alloc] initWithItems:@[self.box2, self.box3, self.box4, self.label1]] autorelease];
+    UIDynamicItemBehavior *itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.box2, self.box3, self.box4, self.label1]];
     itemBehavior.elasticity = 0.7;
     
     [self.animator addBehavior:gravity];

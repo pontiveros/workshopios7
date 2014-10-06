@@ -8,6 +8,7 @@
 
 #import "QAppDelegate.h"
 #import "QRootViewController.h"
+#import "QRegionMonitor.h"
 
 
 @implementation QAppDelegate
@@ -26,6 +27,8 @@
     UINavigationController      *navController = [[[UINavigationController alloc] initWithRootViewController:rootViewController] autorelease];
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
+    
+    [[QRegionMonitor sharedInstance] updateLocation];
     return YES;
 }
 

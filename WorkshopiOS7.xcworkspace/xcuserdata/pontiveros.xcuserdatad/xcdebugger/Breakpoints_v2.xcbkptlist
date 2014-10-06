@@ -9,29 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WorkshopiOS7/QPanelViewController.m"
-            timestampString = "424792275.467205"
+            filePath = "WorkshopiOS7/ALCellStatusMonitor.m"
+            timestampString = "424824804.251938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WorkshopiOS7/QPanelViewController.m"
-            timestampString = "424824792.137544"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-addItemWithIdentifier:fullWidth:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WorkshopiOS7/ALCellStatusMonitor.m"
-            timestampString = "424824804.251938"
+            filePath = "WorkshopiOS7/QPanelViewController.m"
+            timestampString = "434168698.660461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-addItemWithIdentifier:fullWidth:"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "-touchesEnded:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

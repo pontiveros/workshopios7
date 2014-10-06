@@ -45,9 +45,45 @@
     [self.box2 setBackgroundColor:[UIColor grayColor]];
 }
 
-- (IBAction)onTouchTapMe:(id)sender
+- (IBAction)onTouchStartMonitor:(id)sender;
 {
-    exit(0);
+    /*
+    if (self.locationManager == nil) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter  = 500;
+        
+        [self.locationManager startUpdatingLocation];
+    }
+     */
 }
 
+#pragma mark - CLLocationManagerDelegate
+/*
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations");
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+{
+    NSLog(@"(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region");
+}
+
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
+{
+    NSLog(@"(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region");
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error");
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSLog(@"Updating...location.");
+}
+*/
 @end

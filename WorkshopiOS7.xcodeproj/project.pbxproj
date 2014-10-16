@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C0A502C19524B56007B469C /* ALCellStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A502919524B56007B469C /* ALCellStatusMonitor.m */; };
 		1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */; };
+		1C1C700919F0254300B2EBAA /* QTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C700719F0254300B2EBAA /* QTimerVC.m */; };
+		1C1C700A19F0254300B2EBAA /* QTimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C700819F0254300B2EBAA /* QTimerVC.xib */; };
 		1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB41871D92100919946 /* QLocationVC.m */; };
 		1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB51871D92100919946 /* QLocationVC.xib */; };
 		1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C457B311951C4AF00771A3A /* QCustomViewMonitor.m */; };
@@ -49,6 +51,8 @@
 		1CC53883186B44220061F11B /* QMultiThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53881186B44220061F11B /* QMultiThreadVC.xib */; };
 		1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53885186B45D10061F11B /* QWebViewVC.m */; };
 		1CC53888186B45D10061F11B /* QWebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53886186B45D10061F11B /* QWebViewVC.xib */; };
+		1CC8CBDD19F07489007E4729 /* QGCDThreadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8CBDB19F07489007E4729 /* QGCDThreadingVC.m */; };
+		1CC8CBDE19F07489007E4729 /* QGCDThreadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8CBDC19F07489007E4729 /* QGCDThreadingVC.xib */; };
 		1CD6546B19E1DDAD00B9719B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6546A19E1DDAD00B9719B /* CoreLocation.framework */; };
 		1CD6546E19E1F3A600B9719B /* QRegionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6546D19E1F3A600B9719B /* QRegionMonitor.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +72,9 @@
 		1C0A502919524B56007B469C /* ALCellStatusMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCellStatusMonitor.m; sourceTree = "<group>"; };
 		1C0A502A19524B56007B469C /* ALViewStatusMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALViewStatusMonitor.h; sourceTree = "<group>"; };
 		1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALViewStatusMonitor.m; sourceTree = "<group>"; };
+		1C1C700619F0254300B2EBAA /* QTimerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTimerVC.h; sourceTree = "<group>"; };
+		1C1C700719F0254300B2EBAA /* QTimerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTimerVC.m; sourceTree = "<group>"; };
+		1C1C700819F0254300B2EBAA /* QTimerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTimerVC.xib; sourceTree = "<group>"; };
 		1C3CCAB31871D92100919946 /* QLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLocationVC.h; sourceTree = "<group>"; };
 		1C3CCAB41871D92100919946 /* QLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLocationVC.m; sourceTree = "<group>"; };
 		1C3CCAB51871D92100919946 /* QLocationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLocationVC.xib; sourceTree = "<group>"; };
@@ -124,6 +131,9 @@
 		1CC53884186B45D10061F11B /* QWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWebViewVC.h; sourceTree = "<group>"; };
 		1CC53885186B45D10061F11B /* QWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWebViewVC.m; sourceTree = "<group>"; };
 		1CC53886186B45D10061F11B /* QWebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QWebViewVC.xib; sourceTree = "<group>"; };
+		1CC8CBDA19F07489007E4729 /* QGCDThreadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGCDThreadingVC.h; sourceTree = "<group>"; };
+		1CC8CBDB19F07489007E4729 /* QGCDThreadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGCDThreadingVC.m; sourceTree = "<group>"; };
+		1CC8CBDC19F07489007E4729 /* QGCDThreadingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGCDThreadingVC.xib; sourceTree = "<group>"; };
 		1CD6546A19E1DDAD00B9719B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1CD6546C19E1F3A600B9719B /* QRegionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRegionMonitor.h; sourceTree = "<group>"; };
 		1CD6546D19E1F3A600B9719B /* QRegionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRegionMonitor.m; sourceTree = "<group>"; };
@@ -192,6 +202,7 @@
 		1CB6B3581869A3FF0084B694 /* WorkshopiOS7 */ = {
 			isa = PBXGroup;
 			children = (
+				1CC8CBD819F0740C007E4729 /* Multithread */,
 				1C0A502819524B56007B469C /* ALCellStatusMonitor.h */,
 				1C0A502919524B56007B469C /* ALCellStatusMonitor.m */,
 				1C0A502A19524B56007B469C /* ALViewStatusMonitor.h */,
@@ -206,9 +217,6 @@
 				1CC5387A186AADE50061F11B /* QGesturesVC.h */,
 				1CC5387B186AADE50061F11B /* QGesturesVC.m */,
 				1CC5387C186AADE50061F11B /* QGesturesVC.xib */,
-				1CC5387F186B44220061F11B /* QMultiThreadVC.h */,
-				1CC53880186B44220061F11B /* QMultiThreadVC.m */,
-				1CC53881186B44220061F11B /* QMultiThreadVC.xib */,
 				1CC53884186B45D10061F11B /* QWebViewVC.h */,
 				1CC53885186B45D10061F11B /* QWebViewVC.m */,
 				1CC53886186B45D10061F11B /* QWebViewVC.xib */,
@@ -271,6 +279,22 @@
 				1CB6B3781869A3FF0084B694 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC8CBD819F0740C007E4729 /* Multithread */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5387F186B44220061F11B /* QMultiThreadVC.h */,
+				1CC53880186B44220061F11B /* QMultiThreadVC.m */,
+				1CC53881186B44220061F11B /* QMultiThreadVC.xib */,
+				1C1C700619F0254300B2EBAA /* QTimerVC.h */,
+				1C1C700719F0254300B2EBAA /* QTimerVC.m */,
+				1C1C700819F0254300B2EBAA /* QTimerVC.xib */,
+				1CC8CBDA19F07489007E4729 /* QGCDThreadingVC.h */,
+				1CC8CBDB19F07489007E4729 /* QGCDThreadingVC.m */,
+				1CC8CBDC19F07489007E4729 /* QGCDThreadingVC.xib */,
+			);
+			name = Multithread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +378,9 @@
 			files = (
 				1CB5BA10186BDC7A00764C98 /* QTableVC.xib in Resources */,
 				1C7BAD9819096F0B00595B3F /* ReviewList.txt in Resources */,
+				1CC8CBDE19F07489007E4729 /* QGCDThreadingVC.xib in Resources */,
 				1CA70AB8189EDBDA00BB1EF3 /* QCameraManagerVC.xib in Resources */,
+				1C1C700A19F0254300B2EBAA /* QTimerVC.xib in Resources */,
 				1CB5BA15186BF23700764C98 /* QGravityCollisionVC.xib in Resources */,
 				1CC5387E186AADE50061F11B /* QGesturesVC.xib in Resources */,
 				1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */,
@@ -389,6 +415,7 @@
 				1CB5BA14186BF23700764C98 /* QGravityCollisionVC.m in Sources */,
 				1CA70AB7189EDBDA00BB1EF3 /* QCameraManagerVC.m in Sources */,
 				1CC5387D186AADE50061F11B /* QGesturesVC.m in Sources */,
+				1CC8CBDD19F07489007E4729 /* QGCDThreadingVC.m in Sources */,
 				1C63F59018A5B70000913985 /* QMemoryManagementVC.m in Sources */,
 				1CD6546E19E1F3A600B9719B /* QRegionMonitor.m in Sources */,
 				1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */,
@@ -400,6 +427,7 @@
 				1CB6B3661869A3FF0084B694 /* WorkshopiOS7.xcdatamodeld in Sources */,
 				1CC53887186B45D10061F11B /* QWebViewVC.m in Sources */,
 				1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */,
+				1C1C700919F0254300B2EBAA /* QTimerVC.m in Sources */,
 				1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */,
 				1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */,
 				1CB5BA0F186BDC7A00764C98 /* QTableVC.m in Sources */,

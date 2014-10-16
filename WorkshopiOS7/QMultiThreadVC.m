@@ -7,6 +7,8 @@
 //
 
 #import "QMultiThreadVC.h"
+#import "QTimerVC.h"
+#import "QGCDThreadingVC.h"
 
 
 
@@ -83,7 +85,7 @@ int a = 0;
 - (IBAction)onTask2:(id)sender
 {
     [self quizz1];
-    [self quizz2];
+    //[self quizz2];
 }
 
 - (void)quizz1
@@ -94,13 +96,17 @@ int a = 0;
     
     dispatch_async(queue, ^ {
         a = 1;
+        NSLog(@"%d", a);
     });
     
     dispatch_async(queue, ^ {
         a = 2;
+        NSLog(@"%d", a);
     });
     
     NSLog(@"%d", a);
+    
+    // See how looks the console regarding to the values of a(variable) and the order.
 }
 
 - (void)quizz2
@@ -110,11 +116,13 @@ int a = 0;
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     dispatch_async(queue, ^ {
+        sleep(1); // wait for a second... see what happen in the next loop.
         a = 1;
     });
     
+    int i = 0;
     while (a == 0) {
-        NSLog(@"infinit loop ?");
+        NSLog(@"Step: %d", (i++));
     }
     
     NSLog(@"%d", a);
@@ -142,6 +150,18 @@ int a = 0;
     ticks++;
     NSString * updateString = [NSString stringWithFormat:@"Counter: %d ticks!", ticks];
     [self.counter setText:updateString];
+}
+
+- (IBAction)onTouchTimer:(id)sender
+{
+    QTimerVC *timerView = [[[QTimerVC alloc] init] autorelease];
+    [self.navigationController pushViewController:timerView animated:YES];
+}
+
+- (IBAction)onTouchGCDMultithreading:(id)sender
+{
+    QGCDThreadingVC *vc = [[[QGCDThreadingVC alloc] init] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

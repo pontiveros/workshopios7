@@ -11,7 +11,7 @@
 
 @interface QRegionMonitor : NSObject <CLLocationManagerDelegate>
 
-@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 + (QRegionMonitor*)sharedInstance;
 - (void)updateLocation;

@@ -8,15 +8,18 @@
 
 #import "QGCDThreadingVC.h"
 
+static int a = 0;
 @interface QGCDThreadingVC ()
 
 @end
 
 @implementation QGCDThreadingVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"GCD Threading";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +36,57 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)onTouchStartTest1:(id)sender
+{
+    [self quizz1];
+}
+
+- (IBAction)onTouchStopTest1:(id)sender
+{
+    
+}
+
+- (void)quizz1
+{
+    // Typpical way to use GCD queue and multithreading without sync.
+    a = 0;
+    NSLog(@"Begin quizz1");
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_async(queue, ^ {
+        a = 1;
+        NSLog(@"%d", a);
+    });
+    
+    dispatch_async(queue, ^ {
+        a = 2;
+        NSLog(@"%d", a);
+    });
+    
+    NSLog(@"%d", a); // See how looks the console regarding to the values of a(variable) and the order.
+    NSLog(@"Begin quizz1");
+    
+    dispatch_release(queue);
+}
+
+- (void)quizz2
+{
+    a = 0;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_async(queue, ^ {
+        sleep(1); // wait for a second... see what happen in the next loop.
+        a = 1;
+    });
+    
+    int i = 0;
+    while (a == 0) {
+        NSLog(@"Step: %d", (i++));
+    }
+    
+    NSLog(@"%d", a);
+}
 
 @end

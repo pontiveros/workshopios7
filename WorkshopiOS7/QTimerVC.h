@@ -11,6 +11,6 @@
 @interface QTimerVC : UIViewController
 
 @property (nonatomic, retain) IBOutlet UILabel *counterDisplay;
-@property (nonatomic, assign) IBOutlet NSTimer *timer;
+@property (nonatomic, retain) IBOutlet NSTimer *timer;
 
 @end

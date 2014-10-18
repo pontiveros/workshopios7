@@ -42,13 +42,12 @@
     [spinner startAnimating];
     [splashscreen addSubview:spinner];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.sears.com/index-g.html#/store/storeInfo/0001750"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.intel.com"]]];
 }
 
 - (void)dealloc
 {
     [self.webView stopLoading];
-    // [self.webView release];
     [splashscreen release];
     [super dealloc];
 }
@@ -84,7 +83,9 @@
                     animations:^ {
                         [splashscreen removeFromSuperview];
                     }
-                    completion:nil];
+                    completion:^(BOOL flag) {
+                        NSLog(@"Spinner has been removed!");
+                    }];
 }
 
 @end

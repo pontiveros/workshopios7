@@ -16,15 +16,45 @@ static int counter = 0;
 
 @implementation QTimerVC
 
+- (id)init
+{
+    if (self = [super init]) {
+        counter = 0;
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Timer";
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [self killTimer];
+    [super viewDidDisappear:animated];
+}
+
+- (void)dealloc
+{
+    [self killTimer];
+    [super dealloc];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self killTimer];
+}
+
+- (void)killTimer
+{
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
 }
 
 - (IBAction)onTouchStart:(id)sender
@@ -36,9 +66,7 @@ static int counter = 0;
 
 - (IBAction)onTouchStop:(id)sender
 {
-    [self.timer invalidate];
-    [self.timer release];
-    self.timer = nil;
+    [self killTimer];
 }
 
 - (void)onTimerProc

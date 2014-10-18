@@ -23,6 +23,12 @@ QRegionMonitor *regionMonitor;
     return self;
 }
 
+- (void)dealloc
+{
+    // [self.locationManager release];
+    [super dealloc];
+}
+
 + (QRegionMonitor*)sharedInstance
 {
     if (regionMonitor == nil) {

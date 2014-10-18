@@ -13,6 +13,6 @@
     UIView *splashscreen;
 }
 
-@property (nonatomic, retain)IBOutlet UIWebView *webView;
+@property (nonatomic, assign)IBOutlet UIWebView *webView;
 
 @end

@@ -86,7 +86,7 @@ static CGPoint centerView;
 
 - (void)createMonitors
 {
-    CGRect rcItem = CGRectMake(0, 0, 0, 0);
+    CGRect rcItem; //  = CGRectMake(0, 0, 0, 0);
     
     CGFloat offSetY = 60;
     float originY   = 360.0;

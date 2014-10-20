@@ -58,6 +58,15 @@
     collision.collisionDelegate = self;
 }
 
+- (void)dealloc
+{
+    [self.box1 release];
+    [self.box2 release];
+    [self.box3 release];
+    [self.box4 release];
+    [super dealloc];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

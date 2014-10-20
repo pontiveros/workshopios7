@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     UIButton *btnClose = [[UIButton alloc] initWithFrame:CGRectMake(20, 70, 200, 50)];
     [btnClose setBackgroundColor:[UIColor blueColor]];
     [btnClose setTitle:@"CLOSE" forState:UIControlStateNormal];

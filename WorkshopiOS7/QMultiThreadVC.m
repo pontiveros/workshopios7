@@ -9,6 +9,7 @@
 #import "QMultiThreadVC.h"
 #import "QTimerVC.h"
 #import "QGCDThreadingVC.h"
+#import "QNSOperationVC.h"
 
 
 
@@ -120,6 +121,12 @@ int a = 0;
 - (IBAction)onTouchGCDMultithreading:(id)sender
 {
     QGCDThreadingVC *vc = [[[QGCDThreadingVC alloc] init] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onTouchNSOperationSample:(id)sender
+{
+    QNSOperationVC *vc = [[[QNSOperationVC alloc] init] autorelease];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

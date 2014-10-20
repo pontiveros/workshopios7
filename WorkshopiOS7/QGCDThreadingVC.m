@@ -8,21 +8,32 @@
 
 #import "QGCDThreadingVC.h"
 
+#define MAX_LOOP 120.0
+
+// Variables
 static int a = 0;
+static int counter = 0 ;
+
+
 @interface QGCDThreadingVC ()
 
 @end
 
 @implementation QGCDThreadingVC
 
+@synthesize timeLapse;
+@synthesize progressView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"GCD Threading";
+    [self.progressView setProgress:0.0];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -39,15 +50,64 @@ static int a = 0;
 
 - (IBAction)onTouchStartTest1:(id)sender
 {
-    [self quizz1];
-}
-
-- (IBAction)onTouchStopTest1:(id)sender
-{
+    [self.progressView setProgress:0];
     
+    float max_loop = [self.timeLapse.text floatValue];
+
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+    dispatch_async(queue, ^() {
+        for (counter = 0; counter < max_loop; counter++) {
+            sleep(1);
+            dispatch_async(dispatch_get_main_queue(), ^() {
+                // Always update UI in main thread.
+                [self.progressView setProgress:(counter / max_loop)];
+                [self.progressView setNeedsDisplay];
+                NSLog(@"step: %d", counter);
+            });
+        }
+        NSLog(@"End of task: Test1.");
+    });
+    // Analize: what happen if I go to previous view and back to here.
 }
 
-- (void)quizz1
+- (IBAction)onTouchRunQuiz:(id)sender
+{
+    [self quizMethod1];
+    // [self quizMethod2];
+}
+
+static double results[10];
+
+- (IBAction)onTouchMultipleCalls:(id)sender
+{
+    int size  = 10;
+    
+    dispatch_apply(size, dispatch_get_global_queue(0, 0), ^(size_t i) {
+        results[i] = [self calculeA:rand() * 109.2 plusB:rand() * 1.2];
+        // NSLog(@"Cal index: %d : result : %f", (int)i, results[i]);
+    });
+    
+    double average = 0.0;
+    for (int i = 0; i < size; i++) {
+        average += results[i];
+    }
+    
+    average = average / size;
+    
+    UIAlertController *alert = [[UIAlertController alloc] init];
+    alert.title = @"Result";
+    alert.message = [NSString stringWithFormat:@"Average: %f", average];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"Accept"
+                                              style:UIAlertActionStyleCancel
+                                            handler:^(UIAlertAction *action){
+                                                NSLog(@"Alert has been closed.");
+                                            }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)quizMethod1
 {
     // Typpical way to use GCD queue and multithreading without sync.
     a = 0;
@@ -65,12 +125,12 @@ static int a = 0;
     });
     
     NSLog(@"%d", a); // See how looks the console regarding to the values of a(variable) and the order.
-    NSLog(@"Begin quizz1");
+    NSLog(@"End quizz1");
     
     dispatch_release(queue);
 }
 
-- (void)quizz2
+- (void)quizMethod2
 {
     a = 0;
     
@@ -87,6 +147,11 @@ static int a = 0;
     }
     
     NSLog(@"%d", a);
+}
+
+- (double)calculeA:(double)a plusB:(double)b
+{
+    return a + b;
 }
 
 @end

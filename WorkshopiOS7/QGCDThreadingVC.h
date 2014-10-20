@@ -10,4 +10,7 @@
 
 @interface QGCDThreadingVC : UIViewController
 
+@property (nonatomic, assign) IBOutlet UITextField *timeLapse;
+@property (nonatomic, assign) IBOutlet UIProgressView *progressView;
+
 @end

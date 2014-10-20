@@ -10,6 +10,7 @@
 #import "QTimerVC.h"
 #import "QGCDThreadingVC.h"
 #import "QNSOperationVC.h"
+#import "QKVOSampleVC.h"
 
 
 
@@ -127,6 +128,12 @@ int a = 0;
 - (IBAction)onTouchNSOperationSample:(id)sender
 {
     QNSOperationVC *vc = [[[QNSOperationVC alloc] init] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onTouchKVOSample:(id)sender
+{
+    QKVOSampleVC *vc = [[[QKVOSampleVC alloc] init] autorelease];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

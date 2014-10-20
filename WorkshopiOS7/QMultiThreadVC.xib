@@ -42,8 +42,17 @@
                         <action selector="onTouchNSOperationSample:" destination="-1" eventType="touchUpInside" id="n04-KH-yLm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iw-mA-z6b">
+                    <rect key="frame" x="101" y="299" width="118" height="30"/>
+                    <state key="normal" title="KVO Sample">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTouchKVOSample:" destination="-1" eventType="touchUpInside" id="TvK-fs-M9V"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smw-EY-H0I">
-                    <rect key="frame" x="106" y="291" width="109" height="30"/>
+                    <rect key="frame" x="106" y="366" width="109" height="30"/>
                     <state key="normal" title="Communication">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -51,7 +60,7 @@
             </subviews>
             <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <point key="canvasLocation" x="-94" y="38"/>
+            <point key="canvasLocation" x="-30" y="36"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

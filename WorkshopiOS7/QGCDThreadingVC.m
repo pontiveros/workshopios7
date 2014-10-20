@@ -82,9 +82,9 @@ static double results[10];
 {
     int size  = 10;
     
+    // Iteration call
     dispatch_apply(size, dispatch_get_global_queue(0, 0), ^(size_t i) {
         results[i] = [self calculeA:rand() * 109.2 plusB:rand() * 1.2];
-        // NSLog(@"Cal index: %d : result : %f", (int)i, results[i]);
     });
     
     double average = 0.0;
@@ -103,7 +103,6 @@ static double results[10];
                                             handler:^(UIAlertAction *action){
                                                 NSLog(@"Alert has been closed.");
                                             }]];
-    
     [self presentViewController:alert animated:YES completion:nil];
 }
 

@@ -19,6 +19,10 @@
 		1C63F59518A9E94E00913985 /* QFilesAndNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */; };
 		1C63F59618A9E94E00913985 /* QFilesAndNetworkingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C63F59418A9E94E00913985 /* QFilesAndNetworkingVC.xib */; };
 		1C7BAD9819096F0B00595B3F /* ReviewList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C7BAD9719096F0B00595B3F /* ReviewList.txt */; };
+		1C950E1B19F55366000CA3D1 /* QKVOSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C950E1919F55366000CA3D1 /* QKVOSampleVC.m */; };
+		1C950E1C19F55366000CA3D1 /* QKVOSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C950E1919F55366000CA3D1 /* QKVOSampleVC.m */; };
+		1C950E1D19F55366000CA3D1 /* QKVOSampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C950E1A19F55366000CA3D1 /* QKVOSampleVC.xib */; };
+		1C950E1E19F55366000CA3D1 /* QKVOSampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C950E1A19F55366000CA3D1 /* QKVOSampleVC.xib */; };
 		1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A1B1B18E0E729006821BB /* QPanelViewController.m */; };
 		1C9A1B1E18E0E729006821BB /* QPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A1B1C18E0E729006821BB /* QPanelViewController.xib */; };
 		1C9A1B2118E12B6C006821BB /* QCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A1B2018E12B6C006821BB /* QCustomPanel.m */; };
@@ -91,6 +95,9 @@
 		1C63F59318A9E94E00913985 /* QFilesAndNetworkingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilesAndNetworkingVC.m; sourceTree = "<group>"; };
 		1C63F59418A9E94E00913985 /* QFilesAndNetworkingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFilesAndNetworkingVC.xib; sourceTree = "<group>"; };
 		1C7BAD9719096F0B00595B3F /* ReviewList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReviewList.txt; sourceTree = "<group>"; };
+		1C950E1819F55366000CA3D1 /* QKVOSampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKVOSampleVC.h; sourceTree = "<group>"; };
+		1C950E1919F55366000CA3D1 /* QKVOSampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKVOSampleVC.m; sourceTree = "<group>"; };
+		1C950E1A19F55366000CA3D1 /* QKVOSampleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKVOSampleVC.xib; sourceTree = "<group>"; };
 		1C9A1B1A18E0E729006821BB /* QPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPanelViewController.h; sourceTree = "<group>"; };
 		1C9A1B1B18E0E729006821BB /* QPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPanelViewController.m; sourceTree = "<group>"; };
 		1C9A1B1C18E0E729006821BB /* QPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QPanelViewController.xib; sourceTree = "<group>"; };
@@ -303,6 +310,9 @@
 				1CD6783519F356000006B071 /* QNSOperationVC.h */,
 				1CD6783619F356000006B071 /* QNSOperationVC.m */,
 				1CD6783719F356000006B071 /* QNSOperationVC.xib */,
+				1C950E1819F55366000CA3D1 /* QKVOSampleVC.h */,
+				1C950E1919F55366000CA3D1 /* QKVOSampleVC.m */,
+				1C950E1A19F55366000CA3D1 /* QKVOSampleVC.xib */,
 			);
 			name = Multithread;
 			sourceTree = "<group>";
@@ -356,7 +366,7 @@
 				ORGANIZATIONNAME = "Pedro Ontiveros";
 				TargetAttributes = {
 					1CB6B34C1869A3FF0084B694 = {
-						DevelopmentTeam = 44SRE3UW2N;
+						DevelopmentTeam = DXK2N8YN8R;
 					};
 					1CB6B36C1869A3FF0084B694 = {
 						TestTargetID = 1CB6B34C1869A3FF0084B694;
@@ -389,6 +399,7 @@
 				1CB5BA10186BDC7A00764C98 /* QTableVC.xib in Resources */,
 				1C7BAD9819096F0B00595B3F /* ReviewList.txt in Resources */,
 				1CC8CBDE19F07489007E4729 /* QGCDThreadingVC.xib in Resources */,
+				1C950E1D19F55366000CA3D1 /* QKVOSampleVC.xib in Resources */,
 				1CD6783A19F356000006B071 /* QNSOperationVC.xib in Resources */,
 				1CA70AB8189EDBDA00BB1EF3 /* QCameraManagerVC.xib in Resources */,
 				1C1C700A19F0254300B2EBAA /* QTimerVC.xib in Resources */,
@@ -410,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C950E1E19F55366000CA3D1 /* QKVOSampleVC.xib in Resources */,
 				1CD6783B19F356000006B071 /* QNSOperationVC.xib in Resources */,
 				1CB6B37A1869A3FF0084B694 /* InfoPlist.strings in Resources */,
 			);
@@ -433,6 +445,7 @@
 				1C9A1B1D18E0E729006821BB /* QPanelViewController.m in Sources */,
 				1CC53882186B44220061F11B /* QMultiThreadVC.m in Sources */,
 				1CB6B3631869A3FF0084B694 /* QAppDelegate.m in Sources */,
+				1C950E1B19F55366000CA3D1 /* QKVOSampleVC.m in Sources */,
 				1C0A502C19524B56007B469C /* ALCellStatusMonitor.m in Sources */,
 				1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */,
 				1CB6B35F1869A3FF0084B694 /* main.m in Sources */,
@@ -453,6 +466,7 @@
 			files = (
 				1CD6783919F356000006B071 /* QNSOperationVC.m in Sources */,
 				1CB6B37C1869A3FF0084B694 /* WorkshopiOS7Tests.m in Sources */,
+				1C950E1C19F55366000CA3D1 /* QKVOSampleVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,9 +579,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				Bundle_ID = com.searshc.WorkshopiOS7;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pedro Ontiveros (R33N75DBJE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorkshopiOS7/WorkshopiOS7-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
@@ -582,7 +597,7 @@
 					/Users/pontiveros/Development/training/ios/WorkshopiOS7/workshopios7/WorkshopiOS7/SystemCoreLib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5d5e9b9a-de6d-4cd2-8e10-e16c4d64b3ad";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -593,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				Bundle_ID = "";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

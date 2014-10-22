@@ -4,12 +4,12 @@
 //
 //  Created by Pedro Ontiveros on 10/20/14.
 //  Copyright (c) 2014 Pedro Ontiveros. All rights reserved.
-//
+//  Here we have example how to use KVO and NSNotificationCenter
 
 #import "QKVOSampleVC.h"
 
 
-#define UPDATE_PERCENTAJE @"UpdatePercentaje"
+#define UPDATE_VIEW         @"UpdateView"
 
 /*********************** Classes to help **************************/
 
@@ -18,29 +18,14 @@
 - (id)init
 {
     if (self = [super init]) {
-        self.items      = [[NSMutableArray alloc] init];
-        self.percentaje = 0.0;
+        self.percentage = 0.0;
     }
     return self;
 }
 
-
 - (void)dealloc
 {
-    [self.items release];
     [super dealloc];
-}
-
-- (void)updateCustomers
-{
-    for (Customer *item in self.items) {
-        [item updateAccount:@""];
-    }
-}
-
-- (void)updatePercentaje:(double)value
-{
-    
 }
 
 @end
@@ -61,12 +46,24 @@
 - (void)updateAccount:(NSString*)param
 {
     NSLog(@"Customer was recently update");
+    // [[NSNotificationCenter defaultCenter] postNotificationName:UPDATE_VIEW object:nil userInfo:nil];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if ([keyPath isEqual:@""]) {
-        NSLog(@"");
+    if ([keyPath isEqual:@"percentage"]) {
+        NSNumber *number = (NSNumber*)[change objectForKey:@"new"];
+        NSString *value  = [number stringValue];
+        
+        if (value && value.length > 0) {
+            dispatch_async(dispatch_get_main_queue(), ^() {
+                [[NSNotificationCenter defaultCenter] postNotificationName:UPDATE_VIEW
+                                                                    object:self
+                                                                  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:value, @"value", nil]];
+            });
+            
+        }
+        NSLog(@"Percentaje has been changed.");
     }
 }
 @end
@@ -88,13 +85,21 @@
     self.bank     = [[BankEntity alloc] init];
     self.customer = [[Customer alloc] init];
     
-    // Adding a customer instance as observer...
-    [self.bank addObserver:self.customer forKeyPath:UPDATE_PERCENTAJE options:NSKeyValueObservingOptionNew context:nil];
+    // Adding a Customer instance as observer of BankEntity's property.
+    [self.bank addObserver:self.customer forKeyPath:@"percentage" options:NSKeyValueObservingOptionNew context:nil];
 
+    [[NSNotificationCenter defaultCenter] addObserverForName:UPDATE_VIEW object:nil queue:nil usingBlock:^(NSNotification *notification) {
+        NSLog(@"We're here, you have to make better program.");
+        if (notification) {
+            NSString *value = [notification.userInfo objectForKey:@"value"];
+            [self updatePercentage:value];
+        }
+    }];
 }
 
 - (void)dealloc
 {
+    [self.bank removeObserver:self.customer forKeyPath:@"percentage"];
     [self.customer release];
     [self.bank release];
     [super dealloc];
@@ -103,7 +108,9 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.bank removeObserver:self.customer forKeyPath:@"percetnage"];
+    [self.bank release];
+    [self.customer release];
 }
 
 /*
@@ -118,7 +125,19 @@
 
 - (IBAction)onTouchApply:(id)sender
 {
-    
+    @try {
+        self.bank.percentage = [self.input.text floatValue];
+    } @catch (NSException *error) {
+        NSLog(@"ERROR: %@", [error description]);
+        self.bank.percentage = -.1;
+    }
+}
+
+
+- (void)updatePercentage:(NSString*)value
+{
+    self.percentage.text = value;
+    [self.percentage setNeedsDisplay];
 }
 
 @end

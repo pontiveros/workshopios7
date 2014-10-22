@@ -11,11 +11,7 @@
 /*********************** Classes to help **************************/
 @interface BankEntity : NSObject
 
-@property (nonatomic, retain) NSMutableArray *items;
-@property (nonatomic, assign) double percentaje;
-
-- (void)updateCustomers;
-- (void)updatePercentaje:(double)value;
+@property (nonatomic, assign) double percentage;
 
 @end
 
@@ -25,9 +21,6 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, assign) double amount;
 
-
-- (void)updateAccount:(NSString*)param;
-
 @end
 
 /******************************************************************/
@@ -36,4 +29,7 @@
 
 @property (nonatomic, assign) BankEntity *bank;
 @property (nonatomic, assign) Customer   *customer;
+@property (nonatomic, assign) IBOutlet UITextField *input;
+@property (nonatomic, assign) IBOutlet UITextField *percentage;
+
 @end

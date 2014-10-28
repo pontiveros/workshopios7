@@ -144,4 +144,9 @@ int a = 0;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)onTouchOpenApp:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"@http://www.google.com"]];
+}
+
 @end

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t8-io-rDc">
-                    <rect key="frame" x="137" y="116" width="46" height="30"/>
+                    <rect key="frame" x="137" y="69" width="46" height="30"/>
                     <state key="normal" title="Timer">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -25,7 +25,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afz-oS-MvC">
-                    <rect key="frame" x="92" y="179" width="136" height="30"/>
+                    <rect key="frame" x="92" y="120" width="136" height="30"/>
                     <state key="normal" title="GCD Multithreading">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -34,7 +34,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-ji-h0G">
-                    <rect key="frame" x="65" y="237" width="191" height="30"/>
+                    <rect key="frame" x="65" y="172" width="191" height="30"/>
                     <state key="normal" title="NSOperation Multithreading">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -43,7 +43,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iw-mA-z6b">
-                    <rect key="frame" x="101" y="299" width="118" height="30"/>
+                    <rect key="frame" x="101" y="228" width="118" height="30"/>
                     <state key="normal" title="KVO Sample">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -52,12 +52,21 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smw-EY-H0I">
-                    <rect key="frame" x="110" y="357" width="101" height="30"/>
+                    <rect key="frame" x="110" y="287" width="101" height="30"/>
                     <state key="normal" title="Download files">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="onTouchDownloadFiles:" destination="-1" eventType="touchUpInside" id="SjX-VD-TlZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ1-SN-RcJ">
+                    <rect key="frame" x="104" y="344" width="112" height="30"/>
+                    <state key="normal" title="Open Whatsapp">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTouchOpenApp:" destination="-1" eventType="touchUpInside" id="ndY-Zp-AIK"/>
                     </connections>
                 </button>
             </subviews>

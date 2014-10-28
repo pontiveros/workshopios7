@@ -82,6 +82,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"KVO Example";
+    
     self.bank     = [[BankEntity alloc] init];
     self.customer = [[Customer alloc] init];
     
@@ -89,7 +91,7 @@
     [self.bank addObserver:self.customer forKeyPath:@"percentage" options:NSKeyValueObservingOptionNew context:nil];
 
     [[NSNotificationCenter defaultCenter] addObserverForName:UPDATE_VIEW object:nil queue:nil usingBlock:^(NSNotification *notification) {
-        NSLog(@"We're here, you have to make better program.");
+        NSLog(@"Notification has been received: %@.", [notification description]);
         if (notification) {
             NSString *value = [notification.userInfo objectForKey:@"value"];
             [self updatePercentage:value];

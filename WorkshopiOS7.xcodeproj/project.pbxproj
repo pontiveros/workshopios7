@@ -11,6 +11,11 @@
 		1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0A502B19524B56007B469C /* ALViewStatusMonitor.m */; };
 		1C1C700919F0254300B2EBAA /* QTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C700719F0254300B2EBAA /* QTimerVC.m */; };
 		1C1C700A19F0254300B2EBAA /* QTimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C700819F0254300B2EBAA /* QTimerVC.xib */; };
+		1C20EFDF19FADAEE00A41CF0 /* QDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C20EFDE19FADAEE00A41CF0 /* QDownloadOperation.m */; };
+		1C20EFE319FE8CD100A41CF0 /* QDownloadFilesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C20EFE119FE8CD100A41CF0 /* QDownloadFilesVC.m */; };
+		1C20EFE419FE8CD100A41CF0 /* QDownloadFilesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C20EFE119FE8CD100A41CF0 /* QDownloadFilesVC.m */; };
+		1C20EFE519FE8CD100A41CF0 /* QDownloadFilesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C20EFE219FE8CD100A41CF0 /* QDownloadFilesVC.xib */; };
+		1C20EFE619FE8CD100A41CF0 /* QDownloadFilesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C20EFE219FE8CD100A41CF0 /* QDownloadFilesVC.xib */; };
 		1C3CCAB61871D92100919946 /* QLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB41871D92100919946 /* QLocationVC.m */; };
 		1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CCAB51871D92100919946 /* QLocationVC.xib */; };
 		1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C457B311951C4AF00771A3A /* QCustomViewMonitor.m */; };
@@ -83,6 +88,11 @@
 		1C1C700619F0254300B2EBAA /* QTimerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTimerVC.h; sourceTree = "<group>"; };
 		1C1C700719F0254300B2EBAA /* QTimerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTimerVC.m; sourceTree = "<group>"; };
 		1C1C700819F0254300B2EBAA /* QTimerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTimerVC.xib; sourceTree = "<group>"; };
+		1C20EFDD19FADAEE00A41CF0 /* QDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDownloadOperation.h; sourceTree = "<group>"; };
+		1C20EFDE19FADAEE00A41CF0 /* QDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDownloadOperation.m; sourceTree = "<group>"; };
+		1C20EFE019FE8CD100A41CF0 /* QDownloadFilesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDownloadFilesVC.h; sourceTree = "<group>"; };
+		1C20EFE119FE8CD100A41CF0 /* QDownloadFilesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDownloadFilesVC.m; sourceTree = "<group>"; };
+		1C20EFE219FE8CD100A41CF0 /* QDownloadFilesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QDownloadFilesVC.xib; sourceTree = "<group>"; };
 		1C3CCAB31871D92100919946 /* QLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLocationVC.h; sourceTree = "<group>"; };
 		1C3CCAB41871D92100919946 /* QLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLocationVC.m; sourceTree = "<group>"; };
 		1C3CCAB51871D92100919946 /* QLocationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLocationVC.xib; sourceTree = "<group>"; };
@@ -313,6 +323,11 @@
 				1C950E1819F55366000CA3D1 /* QKVOSampleVC.h */,
 				1C950E1919F55366000CA3D1 /* QKVOSampleVC.m */,
 				1C950E1A19F55366000CA3D1 /* QKVOSampleVC.xib */,
+				1C20EFDD19FADAEE00A41CF0 /* QDownloadOperation.h */,
+				1C20EFDE19FADAEE00A41CF0 /* QDownloadOperation.m */,
+				1C20EFE019FE8CD100A41CF0 /* QDownloadFilesVC.h */,
+				1C20EFE119FE8CD100A41CF0 /* QDownloadFilesVC.m */,
+				1C20EFE219FE8CD100A41CF0 /* QDownloadFilesVC.xib */,
 			);
 			name = Multithread;
 			sourceTree = "<group>";
@@ -406,6 +421,7 @@
 				1CB5BA15186BF23700764C98 /* QGravityCollisionVC.xib in Resources */,
 				1CC5387E186AADE50061F11B /* QGesturesVC.xib in Resources */,
 				1C3CCAB71871D92100919946 /* QLocationVC.xib in Resources */,
+				1C20EFE519FE8CD100A41CF0 /* QDownloadFilesVC.xib in Resources */,
 				1C63F59618A9E94E00913985 /* QFilesAndNetworkingVC.xib in Resources */,
 				1C9A1B1E18E0E729006821BB /* QPanelViewController.xib in Resources */,
 				1CC53883186B44220061F11B /* QMultiThreadVC.xib in Resources */,
@@ -423,6 +439,7 @@
 			files = (
 				1C950E1E19F55366000CA3D1 /* QKVOSampleVC.xib in Resources */,
 				1CD6783B19F356000006B071 /* QNSOperationVC.xib in Resources */,
+				1C20EFE619FE8CD100A41CF0 /* QDownloadFilesVC.xib in Resources */,
 				1CB6B37A1869A3FF0084B694 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9A1B2118E12B6C006821BB /* QCustomPanel.m in Sources */,
+				1C20EFDF19FADAEE00A41CF0 /* QDownloadOperation.m in Sources */,
 				1CB6B38A1869A4DF0084B694 /* QRootViewController.m in Sources */,
 				1CB5BA14186BF23700764C98 /* QGravityCollisionVC.m in Sources */,
 				1CA70AB7189EDBDA00BB1EF3 /* QCameraManagerVC.m in Sources */,
@@ -457,6 +475,7 @@
 				1C457B321951C4AF00771A3A /* QCustomViewMonitor.m in Sources */,
 				1C0A502D19524B56007B469C /* ALViewStatusMonitor.m in Sources */,
 				1CB5BA0F186BDC7A00764C98 /* QTableVC.m in Sources */,
+				1C20EFE319FE8CD100A41CF0 /* QDownloadFilesVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +485,7 @@
 			files = (
 				1CD6783919F356000006B071 /* QNSOperationVC.m in Sources */,
 				1CB6B37C1869A3FF0084B694 /* WorkshopiOS7Tests.m in Sources */,
+				1C20EFE419FE8CD100A41CF0 /* QDownloadFilesVC.m in Sources */,
 				1C950E1C19F55366000CA3D1 /* QKVOSampleVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

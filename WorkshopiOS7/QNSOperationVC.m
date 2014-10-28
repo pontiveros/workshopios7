@@ -7,6 +7,8 @@
 //
 
 #import "QNSOperationVC.h"
+#import "QDownloadOperation.h"
+
 
 @interface QNSOperationVC ()
 
@@ -37,9 +39,33 @@
 }
 */
 
-- (IBAction)onTouchStartTask:(id)sender
+- (IBAction)onTouchDownloadOperation:(id)sender
 {
-    // NSOperationQueue
+    BOOL sync = YES;
+    if (sync) {
+        QDownloadOperation *operation = [[QDownloadOperation alloc] init];
+        [operation start];
+        [operation release];
+    } else {
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [queue addOperation:[[QDownloadOperation alloc] init]];
+        [queue release];
+    }
 }
 
+
+- (IBAction)onTouchStartThread1:(id)sender
+{
+    // The simple way to create a thread and leave alone, without sync.
+    // This will create as many threads as the user touch on the button.
+    [NSThread detachNewThreadSelector:@selector(workerThread1) toTarget:self withObject:nil];
+}
+
+- (void)workerThread1
+{
+    for (int i = 0; i < 10; i++) {
+        NSLog(@"workerThread1 ... is working - step %d. - Thread: %@.\n", (i + 1), [NSThread currentThread]);
+        sleep(1);
+    }
+}
 @end

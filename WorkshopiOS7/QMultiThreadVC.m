@@ -11,6 +11,7 @@
 #import "QGCDThreadingVC.h"
 #import "QNSOperationVC.h"
 #import "QKVOSampleVC.h"
+#import "QDownloadFilesVC.h"
 
 
 
@@ -134,6 +135,12 @@ int a = 0;
 - (IBAction)onTouchKVOSample:(id)sender
 {
     QKVOSampleVC *vc = [[[QKVOSampleVC alloc] init] autorelease];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onTouchDownloadFiles:(id)sender
+{
+    QDownloadFilesVC *vc = [[[QDownloadFilesVC alloc] init] autorelease];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

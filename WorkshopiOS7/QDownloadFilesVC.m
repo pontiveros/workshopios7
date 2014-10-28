@@ -53,9 +53,8 @@
 
 - (IBAction)onTouchDownlad:(id)sender
 {
+    QDownloadFilesVC *pSelf = self;
     [self showSpinner];
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(hideSpinner) userInfo:nil repeats:NO];
-    /*
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:self.urlString.text]];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -63,6 +62,10 @@
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               dispatch_async(dispatch_get_main_queue(), ^() {
+                                   [pSelf hideSpinner];
+                               });
+                               
                                if (connectionError) {
                                    NSLog(@"ERROR: %@", [connectionError description]);
                                } else {
@@ -78,9 +81,7 @@
                                    }
                                }
                            }];
-     */
 }
-
 
 - (void)showSpinner
 {
@@ -98,6 +99,8 @@
         [indicator startAnimating];
         [semitransparentView addSubview:indicator];
     }
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
 - (void)hideSpinner
@@ -113,6 +116,7 @@
         [semitransparentView release];
         semitransparentView = nil;
     }
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 @end

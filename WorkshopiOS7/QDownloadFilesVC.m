@@ -53,34 +53,42 @@
 
 - (IBAction)onTouchDownlad:(id)sender
 {
-    QDownloadFilesVC *pSelf = self;
-    [self showSpinner];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:self.urlString.text]];
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:queue
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                               dispatch_async(dispatch_get_main_queue(), ^() {
-                                   [pSelf hideSpinner];
-                               });
-                               
-                               if (connectionError) {
-                                   NSLog(@"ERROR: %@", [connectionError description]);
-                               } else {
-                                   if (data) {
-                                       @try {
-                                           UIImage *image = [UIImage imageWithData:data];
-                                           UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-                                           NSLog(@"Save ok!");
-                                           
-                                       } @catch (NSException *err) {
-                                           NSLog(@"ERROR: %@", [err description]);
+    if (self.urlString.text.length > 0) {
+        QDownloadFilesVC *pSelf = self;
+        [self showSpinner];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        [request setURL:[NSURL URLWithString:self.urlString.text]];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        
+        [NSURLConnection sendAsynchronousRequest:request
+                                           queue:queue
+                               completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                                   dispatch_async(dispatch_get_main_queue(), ^() {
+                                       [pSelf hideSpinner];
+                                   });
+                                   
+                                   if (connectionError) {
+                                       NSLog(@"ERROR: %@", [connectionError description]);
+                                   } else {
+                                       if (data) {
+                                           @try {
+                                               UIImage *image = [UIImage imageWithData:data];
+                                               UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+                                               NSLog(@"Save ok!");
+                                               
+                                           } @catch (NSException *err) {
+                                               NSLog(@"ERROR: %@", [err description]);
+                                           }
                                        }
                                    }
-                               }
-                           }];
+                               }];
+    } else {
+        UIAlertController *alert = [[[UIAlertController alloc] init] autorelease];
+        alert.title   = @"ERROR";
+        alert.message = @"Please set the url";
+        [alert addAction:[UIAlertAction actionWithTitle:@"Accept" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 - (void)showSpinner

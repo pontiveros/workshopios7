@@ -5,6 +5,9 @@
       location = "group:WorkshopiOS7.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:QBuril/QBuril.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:QCoreSystem/QCoreSystem.xcodeproj">
    </FileRef>
 </Workspace>
